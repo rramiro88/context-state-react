@@ -7,17 +7,17 @@ export const MovieProvider = (props) => {
     const [movies, setMovies] = useState([
         {
           name: "Operacion Final",
-          price: "$20",
+          price: 20,
           id: 1
         },
         {
           name: "La era del hielo",
-          price: "$10",
+          price: 10,
           id: 2,
         },
         {
           name: "La vida es bella",
-          price: "$15",
+          price: 15,
           id: 3,
         },
       ]);

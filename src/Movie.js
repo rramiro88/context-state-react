@@ -22,8 +22,8 @@ export const Movie = ({ name, price, id}) => {
       <h5 className="card-title">{name}</h5>
       <div className="card-body">
       <h6 className="card-subtitle">Id: {id}</h6>
-        <p className="card-text">{price}</p>
-        <button className="btn btn-danger right-align" onClick={handleDelete}>
+        <p className="card-text">$ {price}</p>
+        <button className="btn btn-danger" onClick={handleDelete}>
           Delete
         </button>
       </div>

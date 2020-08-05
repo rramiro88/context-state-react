@@ -3,21 +3,18 @@ import { MovieList } from "./MovieList";
 import { MovieProvider } from "./MovieContext";
 import { Nav } from "./Nav";
 import { AddMovie } from "./AddMovie";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <MovieProvider>
+      <BrowserRouter>
       <Nav />
-      <div className="container">
-        <div className="row">
-          <div className="col-3">
-            <AddMovie />
-          </div>
-          <div className="col-4">
-            <MovieList />
-          </div>
+        <div className="container">
+          <Route path='/' exact component={MovieList}/>
+          <Route path='/add' exact component={AddMovie}/>
         </div>
-      </div>
+      </BrowserRouter>
     </MovieProvider>
   );
 };

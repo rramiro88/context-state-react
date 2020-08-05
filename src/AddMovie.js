@@ -25,7 +25,7 @@ export const AddMovie = () => {
         <div className='card input-group'>
             <form onSubmit={addMovie}>
                 <input type='text' name='name' value={name} placeholder='name' onChange={updateName} className='form-control'/>
-                <input type='text' name='price' value={price} placeholder='price' onChange={updatePrice} className='form-control'/>
+                <input type='number' name='price' value={price} placeholder='price' onChange={updatePrice} className='form-control'/>
                 <br/>
                 <button className="btn btn-primary">Submit</button>
             </form>
